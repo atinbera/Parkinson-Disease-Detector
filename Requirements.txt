@@ -1,0 +1,5 @@
+Flask==2.2.5
+scikit-learn==1.0.2
+numpy==1.21.6
+pickle5
+gunicorn==19.9.0

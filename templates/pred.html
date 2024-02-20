@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parkinson's Disease Prediction</title>
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="Website Icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtkcEkxwUqbbMnYFsw69zbeQ_XhAEr8KM7mw&usqp=CAU">
+</head>
+<!--<body>
+    <div class="navbar"><h1>Heart Disease Prediction</h1></div>
+</body>
+</html> -->
+
+<body>
+    
+ <div class="login">
+	<h1>Parkinson's Disease Prediction</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <!-- <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="experience" placeholder="Experience" required="required" />
+        <input type="text" name="test_score" placeholder="Test Score" required="required" />
+		<input type="text" name="interview_score" placeholder="Interview Score" required="required" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form> -->
+ 
+
+    <form action="{{url_for('predict')}}"method="post">
+      <input type="text" name="MDVP:Fo(Hz)" placeholder="Enter your MDVP:Fo(Hz) lavel" class="input" required="required" />
+      <input type="text" name="MDVP:Fhi(Hz)" placeholder="Enter your MDVP:Fhi(Hz) lavel" class="input" required="required" />
+      <input type="text" name="MDVP:Flo(Hz)" placeholder="Enter your MDVP:Flo(Hz) lavel" class="input" required="required" />
+      <input type="text" name="MDVP:Jitter(%)" placeholder="Enter MDVP:Jitter(%)" class="input" required="required" />
+      <input type="text" name="MDVP:Jitter(Abs)" placeholder="MDVP:Jitter(Abs)" class="input" required="required" />
+      <input type="text" name="MDVP:RAP" placeholder="MDVP:RAP lavel" class="input" required="required" />
+      <input type="text" name="MDVP:PPQ" placeholder="MDVP:PPQ lavel" class="input" required="required" />
+      <input type="text" name="Jitter:DDP" placeholder="Enter Jitter:DDP lavel" class="input" required="required" />
+      <input type="text" name="MDVP:Shimmer" placeholder="Enter MDVP:Shimmer lavel" class="input" required="required" />
+      <input type="text" name="MDVP:Shimmer(dB)" placeholder="Enter MDVP:Shimmer(dB) lavel" class="input" required="required" />
+      <input type="text" name="Shimmer:APQ3" placeholder="Enter Shimmer:APQ3 lavel" class="input" required="required" />
+      <input type="text" name="Shimmer:APQ5" placeholder="Enter Shimmer:APQ5 lavel" class="input" required="required" />
+      <input type="text" name="MDVP:APQ" placeholder="Enter MDVP:APQ lavel" class="input" required="required" />
+      <input type="text" name="Shimmer:DDA" placeholder="Enter Shimmer:DDA lavel" class="input" required="required" />
+      <input type="text" name="NHR" placeholder="Enter NHR lavel" class="input" required="required" />
+      <input type="text" name="HNR" placeholder="Enter HNR lavel" class="input" required="required" />
+      <input type="text" name="RPDE" placeholder="Enter RPDE lavel" class="input" required="required" />
+      <input type="text" name="DFA" placeholder="Enter DFA lavel" class="input" required="required" />
+      <input type="text" name="spread1" placeholder="Enter spread1 lavel" class="input" required="required" />
+      <input type="text" name="spread2" placeholder="Enter spread2 lavel" class="input" required="required" />
+      <input type="text" name="D2" placeholder="Enter D2 lavel" class="input" required="required" />
+      <input type="text" name="PPE" placeholder="Enter PPE lavel" class="input" required="required" />
+
+      <button type="submit" class="btn-primary"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"></path></svg><span>Predict</span></button>
+      </form>
+
+    
+
+    <br>
+    <br>
+    {{ prediction_text }}
+ </div>
+
+        
+</body>
+</html>

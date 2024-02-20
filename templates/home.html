@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parkinson's Disease Prediction</title>
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="Website Icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtkcEkxwUqbbMnYFsw69zbeQ_XhAEr8KM7mw&usqp=CAU">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .footer {
+        background: linear-gradient(to right, violet, darkviolet);
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .social-icons {
+        list-style: none;
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    .social-icons li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    .social-icons a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .copyright {
+        margin-top: 10px;
+    }
+    </style>
+</head>
+
+<body>
+    
+<header class="header">
+    <a href="#" class="logo">Parkinson Disease</a>
+    <nav class="navbar11">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contacts</a>
+    </nav>
+</header>
+    <br>
+    <div class="navbar"><h1></h1></div>
+        <br>
+        <img class = "dev" src = "https://cdn.fusfoundation.org/2021/11/28142627/Stock_doctor_consult_Nov_2021_16x9.png">
+        
+        <p class = "para" >Parkinson’s disease is a brain disorder that causes unintended or uncontrollable movements, such as shaking, stiffness, and difficulty with balance and coordination.
+
+            Symptoms usually begin gradually and worsen over time. As the disease progresses, people may have difficulty walking and talking. They may also have mental and behavioral changes, sleep problems, depression, memory difficulties, and fatigue.
+            
+            Older woman and her caregiverWhile virtually anyone could be at risk for developing Parkinson’s, some research studies suggest this disease affects more men than women. It’s unclear why, but studies are underway to understand factors that may increase a person’s risk. One clear risk is age: Although most people with Parkinson’s first develop the disease after age 60, about 5% to 10% experience onset before the age of 50. Early-onset forms of Parkinson’s are often, but not always, inherited, and some forms have been linked to specific alterations in genes. </p>
+    <br>
+
+
+    <div class="services-content">
+        <div class="box">
+            <img class="card-img-top" src="https://www.homeohealthplus.com/public/images/treatment/pryaksin.png" class="card-img-top" height="200rem">
+            <h5 class="card-title">Know more about Parkinson Diseases</h5>
+            <p class="card-text">It's a brain disorder that causes unintended or uncontrollable movements.
+
+                Symptoms usually begin gradually and worsen over time. As the disease progresses, people may have difficulty walking and talking.</p>
+          <a href="https://www.who.int/news-room/fact-sheets/detail/parkinson-disease#:~:text=Overview-,Parkinson%20disease%20(PD)%20is%20a%20degenerative%20condition%20of%20the%20brain,pain%20and%20other%20sensory%20disturbances" target="_main" class="btn btn-primary btn-block btn-large"" >Continue Reading</a>
+        </div>
+        <div class="box">
+            <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsxUvveR0_KMWQcrvoAlxHo2qKPZuQ_RANJw&usqp=CAU" class="card-img-top" alt="Card image cap" height="200rem">
+            <h5 class="card-title">Test if you have Parkinson's Disease or not</h5>
+            <p class="card-text">Our Model have accuracy of 91.6%.</p>
+            <a href="{{url_for('find')}}"  target="_main" class="btn btn-primary btn-block btn-large" >Check Now</a>
+        </div>
+        <div class="box">
+            <img class="card-img-top" src="https://media.istockphoto.com/id/1020728846/photo/family-yoga-outside-in-the-morning.jpg?s=612x612&w=0&k=20&c=ottJbbYRT9mn2Pmaa-R-3LuDC540GZFIaSWGWAt8NN8=" class="card-img-top" height="200rem">
+            <h5 class="card-title">Know how to prevent these diseases</h5>
+              <p class="card-text">According to a study, India has 7 million elders afflicted with Parkinson's.</p>
+              <a href="https://www.thelancet.com/journals/laneur/article/PIIS1474-4422(16)30230-7/fulltext?shortlink=f1a061a3&pid=Email&c=selfserve-comms-2021&af_channel=Email&shortlink%5B0%5D%5B0%5D=f1a061a3&pid%5B0%5D%5B0%5D=Email&pid%5B0%5D%5B1%5D=Email&pid%5B1%5D%5B0%5D=Email&pid%5B1%5D%5B1%5D=Email%2CEmail&c%5B0%5D%5B0%5D=selfserve-comms-2021&c%5B0%5D%5B1%5D=selfserve-comms-2021&c%5B1%5D%5B0%5D=selfserve-comms-2021&c%5B1%5D%5B1%5D=selfserve-comms-2021%2Cselfserve-comms-2021&af_channel%5B0%5D%5B0%5D=Email&af_channel%5B0%5D%5B1%5D=Email&af_channel%5B1%5D%5B0%5D=Email&af_channel%5B1%5D%5B1%5D=Email%2CEmail&gh_jid%5B0%5D%5B0%5D=5145344003&fbclid%5B0%5D%5B0%5D%5B0%5D=IwAR0vQtCkGmrIzrvhah1v3Kiz9XsZGA4ld1iHOc0DMwHNIswAohLuQY6Pirg&fbclid%5B0%5D%5B0%5D%5B1%5D=IwAR0vQtCkGmrIzrvhah1v3Kiz9XsZGA4ld1iHOc0DMwHNIswAohLuQY6Pirg&fbclid%5B0%5D%5B1%5D%5B0%5D=IwAR0vQtCkGmrIzrvhah1v3Kiz9XsZGA4ld1iHOc0DMwHNIswAohLuQY6Pirg&fbclid%5B0%5D%5B1%5D%5B1%5D=IwAR0vQtCkGmrIzrvhah1v3Kiz9XsZGA4ld1iHOc0DMwHNIswAohLuQY6Pirg&wtime=%7Bseek_to_second_number%7D" target="_main" class="btn btn-primary btn-block btn-large" >Continue Reading</a>
+        </div>
+    </div>
+
+     <!-- scroll up-->
+     <a href="#" class="top"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROEPZKwR8eOeOhvnjvQbPUeqczg683mwcoLvnkM9i1y0UvN26pB2lDbHst74jC8kZX_wg&usqp=CAU" alt="" height="40px"> </a>
+     <footer class="footer">
+        <ul class="social-icons">
+          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+        <p>&copy; 2023 - Techmaster Guardians</p>
+      </footer>
+</html> 
+</body>
+</html>
