@@ -5,4 +5,4 @@
 
 ### Parkinson's disease is a chronic degenerative disorder of the central nervous system that affects both the motor system and non-motor systems. The symptoms usually emerge slowly, and as the disease progresses, non-motor symptoms become more common. Early symptoms are tremors, rigidity, slowness of movement, and difficulty with walking. Problems may also arise with cognition, behaviour, sleep, and sensory systems. Parkinson's disease dementia is common in advanced stages.
 
-website Link:- https://parkinson-detector-new.onrender.com
+
